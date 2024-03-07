@@ -7,7 +7,7 @@ type Props = {}
 
 export default function Hero({}: Props) {
     const [text, count] = useTypewriter({
-        words : ["Hi, my name's Ochuko!", "Guy who loves Javascript", "And loves building production ready apps."],
+        words : ["Hi, my name's Ochuko!", "I am a developer", "And I love Javascript."],
         loop : true,
         delaySpeed : 2000,
     })
@@ -17,7 +17,7 @@ export default function Hero({}: Props) {
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={'/ochuko.jpg'} alt='profile-image' width={200} height={200} />
          <div className='z-20'>
             <h2 className='text-sm uppercase text-gray-500 tracking-[15px] pb-2'>frontend developer</h2>
-         <h1 className='text-5xl lg:text-6xl font-semibold px-10'>
+         <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold px-10'>
         <span className='mr-3'>{text}</span>
         <Cursor cursorColor='#f7ab0a' />
         </h1>

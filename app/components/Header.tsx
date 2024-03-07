@@ -6,7 +6,7 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <div className="flex items-start justify-between sticky top-0 max-w-6xl mx-auto z-20 xl:items-center p-5">
+    <header className="flex items-start justify-between sticky top-0 max-w-6xl mx-auto z-20 xl:items-center p-5">
         {/*Left*/}
         <motion.div
         initial={{
@@ -53,6 +53,6 @@ export default function Header({}: Props) {
             <SocialIcon network="email" url="whoroochuko@gmail.com" className="cursor-pointer" fgColor="gray" bgColor="transparent" />
             <p className="uppercase hidden text-sm text-gray-400 sm:inline-flex">get in touch</p>
         </motion.div>
-    </div>
+    </header>
   )
 }
