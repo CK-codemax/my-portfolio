@@ -15,6 +15,7 @@ export default function Hero({}: Props) {
     <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
         <BackGroundCircles />
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={'/ochuko.jpg'} alt='profile-image' width={200} height={200} />
+       
          <div className='z-20'>
             <h2 className='text-sm uppercase text-gray-500 tracking-[15px] pb-2'>frontend developer</h2>
          <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold px-10'>
