@@ -8,7 +8,7 @@ import WorkExperience from "./components/WorkExperience";
 
 export default function page() {
   return (
-    <div>
+    <div className="overflow-y-scroll overflow-x-hidden text-white snap-y snap-mandatory h-screen scrollbar scrollbar-track-gray-400/20 scrollbar-thumb-[#f7ab0a]/80">
      <Header />
       <section className="snap-start" id="hero">
         <Hero />
