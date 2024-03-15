@@ -5,6 +5,11 @@ import Hero from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import WorkExperience from "./components/WorkExperience";
+import JumiaClone from "./components/JumiaClone";
+import FaceBookClone from "./components/FaceBookClone";
+import HuluClone from "./components/HuluClone";
+import HuluWeb from "./components/HuluWeb";
+
 
 export default function page() {
   return (
@@ -18,6 +23,22 @@ export default function page() {
       </section>
       <section className="snap-center" id="experience">
         <WorkExperience />
+      </section>
+
+      <section className="snap-center">
+        <JumiaClone />
+      </section>
+
+      <section className="snap-center">
+        <HuluClone />
+      </section>
+
+      <section className="snap-center">
+        <FaceBookClone />
+      </section>
+
+      <section className="snap-center">
+        <HuluWeb />
       </section>
 
       <section className="snap-start" id="skills">
