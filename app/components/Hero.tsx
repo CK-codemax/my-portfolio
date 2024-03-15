@@ -17,8 +17,8 @@ export default function Hero({}: Props) {
         <Image className='relative rounded-full h-32 w-32 mx-auto object-cover' src={'/ochuko.jpg'} alt='profile-image' width={200} height={200} />
        
          <div className='z-20'>
-            <h2 className='text-sm uppercase text-gray-500 tracking-[15px] pb-2'>frontend developer</h2>
-         <h1 className='text-2xl sm:text-4xl lg:text-6xl font-semibold px-10'>
+            <h2 className='text-xs sm:text-sm uppercase text-nowrap text-gray-500 tracking-[7px] sm:tracking-[15px] pb-2'>frontend developer</h2>
+         <h1 className='text-xl sm:text-4xl lg:text-6xl font-semibold px-10'>
         <span className='mr-3'>{text}</span>
         <Cursor cursorColor='#f7ab0a' />
         </h1>

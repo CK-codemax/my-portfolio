@@ -23,10 +23,10 @@ export default function ContactMe({}: Props) {
 
   return (
     <div className='h-screen relative flex flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center '>
-       <h3 className="absolute top-16 uppercase tracking-[20px] text-gray-500 text-lg sm:text-2xl">Contact me</h3>
+       <h3 className="absolute top-20 sm:top-8 uppercase tracking-[20px] text-gray-500 text-base sm:text-xl">Contact me</h3>
 
-       <div className='flex flex-col space-y-10'>
-        <h4 className='text-4xl font-semibold text-center'>
+       <div className='flex flex-col space-y-3 sm:space-y-10'>
+        <h4 className='text-base sm:text-lg lg:text-xl font-semibold text-center'>
           I have what you need for your site. 
         </h4>
       
@@ -35,13 +35,13 @@ export default function ContactMe({}: Props) {
         <div className='flex items-center justify-center space-x-5'>
 
          <PhoneIcon className='text-[#f7ab0a] h-7 animate-pulse' />
-         <p className='text-2xl'>+234 703 071 6246</p>
+         <p className='text-base sm:text-lg lg:text-xl'>+234 703 071 6246</p>
         </div>
 
         <div className='flex items-center justify-center space-x-5'>
 
 <MapPinIcon className='text-[#f7ab0a] h-7 animate-pulse' />
-<p className='text-2xl'>UI, Ibadan</p>
+<p className='text-base sm:text-lg lg:text-xl'>UI, Ibadan</p>
 </div>
 
 <div className='flex items-center justify-center space-x-5'>
@@ -51,8 +51,8 @@ export default function ContactMe({}: Props) {
 </div>
        </div>
 
-       <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col space-y-2 w-fit mx-auto'>
-        <div className='flex space-x-2'>
+       <form onSubmit={handleSubmit(onSubmit)} className='flex px-5 flex-col w-screen sm:px-0 sm:w-[550px] space-y-2 w-fit mx-auto'>
+        <div className='flex flex-col space-y-2 sm:flex-row sm:items-center sm:justify-between sm:space-y-0'>
            <input {...register('name')} placeholder='Name' className='contactInput' type="text" />
            <input {...register('email')} placeholder='Email' className='contactInput' type="email" />
         </div>
