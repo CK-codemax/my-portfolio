@@ -18,5 +18,7 @@ const config: Config = {
   plugins: [
     require('tailwind-scrollbar'),
   ],
+
+  darkMode: "class",
 };
 export default config;

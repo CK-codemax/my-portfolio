@@ -24,7 +24,7 @@ export default function Slide({ src }: Props) {
 
   }} 
   viewport={{once : true,}}
-  className="w-full h-auto flex-grow object-cover object-center" src={src} />
+  className="w-full h-auto object-cover object-center" src={src} />
    </article>
 
   )

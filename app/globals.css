@@ -4,9 +4,6 @@
 
 @layer components{
   body{
-    background-color : rgb(36, 36, 36);
-    color: white;
-    height: 100vh;
     @apply snap-y snap-mandatory overflow-y-scroll z-0
   }
 
