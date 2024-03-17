@@ -31,7 +31,7 @@ export default function ProjectImages({slideShowImages}: Props) {
     
 {slideShowImages.map((image, i) => 
             <SwiperSlide key={image}>
-                 <Image className="object-cover hover:scale-105 w-full h-auto cursor-pointer transition-all duration-300 ease-in-out" src={image} alt="project-image" width={500} height={500} />
+                 <Image className="object-cover hover:scale-105 w-full h-auto max-h-[200px] xl:max-h-[300px] cursor-pointer transition-all duration-300 ease-in-out" src={image} alt="project-image" width={500} height={500} />
             </SwiperSlide>
               )}
 
