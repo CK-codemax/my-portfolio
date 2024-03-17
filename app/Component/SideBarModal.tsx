@@ -79,10 +79,10 @@ function Window(){
              <div ref={sideBarRef} className="pt-4 w-full h-full bg-gray-100 dark:bg-gray-800 flex flex-col ">
         
 
-<Link onClick={closeModal} className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center  dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Home</Link>
-<Link onClick={closeModal} className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Tech stack</Link>
-<Link onClick={closeModal} className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Projects</Link>
-<Link onClick={closeModal} className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>ContactMe</Link>
+<Link className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center  dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Home</Link>
+<Link className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Tech stack</Link>
+<Link className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Projects</Link>
+<Link className="tracking-widest h-[50px] flex justify-center items-center text-xs uppercase w-full text-center dark:text-gray-100 dark:hover:text-white text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>ContactMe</Link>
 
     </div>
 
