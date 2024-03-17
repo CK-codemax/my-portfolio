@@ -11,10 +11,6 @@ interface SideBarModalContextValue {
   closeModal: () => void;
  }
  
-
-//const SideBarModalContext = createContext()
-
-// Create the context with a default value
 const SideBarModalContext = createContext<SideBarModalContextValue>({
  isOpen: false,
  openModal: () => {},
@@ -27,19 +23,7 @@ const SideBarModalContext = createContext<SideBarModalContextValue>({
 interface SideBarModalProps {
   children: React.ReactNode; // Define the type for the children prop
  }
-/*
-function SideBarModal({children}: Props) {
-  const [isOpen, setIsOpen] = useState(false);
 
-  const closeModal = () => setIsOpen(false);
-  const openModal = () => setIsOpen((open) => !open);
-
-  return (
-    <SideBarModalContext.Provider value={{closeModal, openModal, isOpen }}>
-     {children}
-    </SideBarModalContext.Provider>
-  );
-}*/
 
 function SideBarModal({children} : SideBarModalProps){
   const [isOpen, setIsOpen] = useState(false);
@@ -74,7 +58,7 @@ function SideBarModal({children} : SideBarModalProps){
 
 function Window(){
     const { closeModal, isOpen } = useContext(SideBarModalContext);
-    const sideBarRef = useRef<HTMLElement | null>(null);
+    const sideBarRef = useRef<HTMLDivElement | null>(null);
 
     const [mounted, setMounted] = useState(false)
 
