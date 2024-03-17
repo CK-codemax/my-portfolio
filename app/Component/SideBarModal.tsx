@@ -4,13 +4,30 @@ import Link from "next/link";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
 
-const SideBarModalContext = createContext();
+// Define the shape of the context value
+interface SideBarModalContextValue {
+  isOpen: boolean;
+  openModal: () => void;
+  closeModal: () => void;
+ }
+ 
+
+//const SideBarModalContext = createContext()
+
+// Create the context with a default value
+const SideBarModalContext = createContext<SideBarModalContextValue>({
+ isOpen: false,
+ openModal: () => {},
+ closeModal: () => {},
+});
 
 
-type Props = {
-  children: React.ReactNode;
-}
 
+
+interface SideBarModalProps {
+  children: React.ReactNode; // Define the type for the children prop
+ }
+/*
 function SideBarModal({children}: Props) {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -22,7 +39,22 @@ function SideBarModal({children}: Props) {
      {children}
     </SideBarModalContext.Provider>
   );
-}
+}*/
+
+function SideBarModal({children} : SideBarModalProps){
+  const [isOpen, setIsOpen] = useState(false);
+ 
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
+ 
+  // Provide the context value to child components
+  return (
+     <SideBarModalContext.Provider value={{ isOpen, openModal, closeModal }}>
+       {children}
+     </SideBarModalContext.Provider>
+  );
+ };
+ 
 
   function Open() {
   const { openModal, isOpen } = useContext(SideBarModalContext);
@@ -42,7 +74,7 @@ function SideBarModal({children}: Props) {
 
 function Window(){
     const { closeModal, isOpen } = useContext(SideBarModalContext);
-    const sideBarRef = useRef()
+    const sideBarRef = useRef<HTMLElement | null>(null);
 
     const [mounted, setMounted] = useState(false)
 
@@ -53,22 +85,23 @@ function Window(){
     }, [])
 
    
-    
-   useEffect(
-     function(){
-     function handleClick(e){
-       if(sideBarRef.current && !sideBarRef.current.contains(e.target)){
-         closeModal()
+
+  useEffect(() => {
+    // Define the event handler function
+    const handleClick = (e: MouseEvent) => {
+       if (sideBarRef.current && !sideBarRef.current.contains(e.target as Node)) {
+         closeModal();
        }
-     }
-
-     document.addEventListener('click', handleClick)
-
-    return () => document.removeEventListener('click', handleClick)
-     },
-     [closeModal]
-  )
-
+    };
+   
+    // Add the event listener
+    document.addEventListener('click', handleClick);
+   
+    // Cleanup function to remove the event listener
+    return () => {
+       document.removeEventListener('click', handleClick);
+    };
+   }, [closeModal])
          if(!mounted)return
          return createPortal(<>
         {isOpen && (<div className="lg:hidden bg-black/10 w-full bg-[rgba(255, 255, 255, 0.1)] z-30 h-screen fixed top-0 left-0"/>
