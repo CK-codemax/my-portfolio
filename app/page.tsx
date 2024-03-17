@@ -2,7 +2,7 @@ import About from "./components/About";
 import ContactMe from "./component/ContactMe";
 import Header from "./component/Header";
 import Hero from "./component/Hero";
-import Projects from "./components/Projects";
+import Projects from "./component/Projects";
 import Skills from "./component/Skills";
 import WorkExperience from "./components/WorkExperience";
 import JumiaClone from "./components/JumiaClone";
@@ -59,6 +59,10 @@ export default function page() {
         <Header />
         <section className="snap-start" id="hero">
          <Hero />
+       </section>
+
+       <section className="snap-start" id="projects">
+         <Projects />
        </section>
 
        <section className="snap-start" id="skills">
