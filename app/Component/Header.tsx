@@ -4,6 +4,7 @@ import Link from "next/link"
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa"
 import ChangeTheme from "./ChangeTheme"
 import SideBarModal from "./SideBarModal"
+import { scrollToElement } from "../helpers/scrollTo"
 type Props = {}
 
 export default function Header({}: Props) {
@@ -69,10 +70,10 @@ export default function Header({}: Props) {
 
         <div className="hidden lg:flex items-center space-x-3">
 
-            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Home</Link>
-            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Tech stack</Link>
-            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Projects</Link>
-            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>ContactMe</Link>
+            <Link onClick={() => scrollToElement('skills')} className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Home</Link> 
+            <Link onClick={() => scrollToElement('skills')} className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Tech stack</Link>
+            <Link onClick={() => scrollToElement('skills')} className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>Projects</Link>
+            <Link onClick={() => scrollToElement('skills')} className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'/'}>ContactMe</Link>
 
 
         </div>
