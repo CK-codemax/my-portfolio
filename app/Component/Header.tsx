@@ -4,7 +4,6 @@ import Link from "next/link"
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa"
 import ChangeTheme from "./ChangeTheme"
 import SideBarModal from "./SideBarModal"
-import { scrollToElement } from "../helpers/scrollTo"
 type Props = {}
 
 export default function Header({}: Props) {
@@ -28,17 +27,17 @@ export default function Header({}: Props) {
             duration : 0.75,
 
         }} className="flex items-center space-x-2 sm:space-x-3">
-            <Link href={'https://github.com/CK-codemax'} className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
+            <a target="_blank" rel="noopener noreferrer" href='https://github.com/CK-codemax' className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
                 <FaGithub className="text-[28px] group-hover:text-[32px] text-gray-700 dark:text-gray-200 dark:group-hover:text-gray-900 group-hover:text-gray-900 transition-all duration-300 ease-in-out" />
-            </Link>
+            </a >
 
-            <Link href={'https://www.linkedin.com/in/ochuko-whoro-214b6328b/'} className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
+            <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/ochuko-whoro-214b6328b/' className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
                 <FaLinkedin className="text-[28px] group-hover:text-[32px] text-gray-700  dark:text-gray-200 dark:group-hover:text-gray-900 group-hover:text-gray-900 transition-all duration-300 ease-in-out" />
-            </Link>
+            </a >
 
-            <Link href={'https://twitter.com/OchukoWH'} className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
+            <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/OchukoWH' className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
                 <FaTwitter className="text-[28px] group-hover:text-[32px] text-gray-700  dark:text-gray-200 dark:group-hover:text-gray-900 group-hover:text-gray-900 transition-all duration-300 ease-in-out" />
-            </Link>
+            </a >
 
         </motion.div>
         
