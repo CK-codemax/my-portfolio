@@ -8,6 +8,7 @@ import Skills from "./Skills";
 import Footer from "./Footer";
 import { useEffect, useState } from "react";
 import Loader from "./Loader";
+import Experience from "./Experience";
 
 
 export default function MainApp() {
@@ -23,7 +24,7 @@ export default function MainApp() {
     
      <div className="overflow-y-scroll overflow-x-hidden snap-y snap-mandatory h-screen scroll-smooth">
         <Header />
-        <section className="snap-start" id="hero">
+        <section className="snap-start" id="top">
          <Hero />
        </section>
 
@@ -31,11 +32,15 @@ export default function MainApp() {
          <Projects />
        </section>
 
-       <section className="snap-start" id="skills">
+       <section className="snap-start" id="experience">
+         <Experience />
+       </section>
+
+       <section className="snap-center" id="skills">
          <Skills  />
        </section>
 
-       <section className="snap-start" id="contact">
+       <section className="snap-center" id="contact">
          <ContactMe  />
        </section>
 

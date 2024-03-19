@@ -1,14 +1,15 @@
 'use client'
 import { motion } from "framer-motion"
 import Link from "next/link"
-import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa"
+import {FaGithub, FaLinkedin} from "react-icons/fa"
 import ChangeTheme from "./ChangeTheme"
 import SideBarModal from "./SideBarModal"
+import { FaXTwitter } from "react-icons/fa6"
 type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className="bg-gray-200 z-50 top-0 dark:bg-[#242424] h-[70px] w-full shadow-md sticky justify-between px-3 lg:px-7 flex items-center">
+    <header className="bg-gray-200/90 z-50 top-0 dark:bg-[#242424]/90 h-[70px] w-full shadow-md sticky justify-between px-3 lg:px-7 flex items-center">
    
         <motion.div
         initial={{
@@ -36,7 +37,7 @@ export default function Header({}: Props) {
             </a >
 
             <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/OchukoWH' className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-transparent hover:bg-gray-500 dark:hover:bg-gray-200 transition-all duration-300 ease-in-out">
-                <FaTwitter className="text-[28px] group-hover:text-[32px] text-gray-700  dark:text-gray-200 dark:group-hover:text-gray-900 group-hover:text-gray-900 transition-all duration-300 ease-in-out" />
+                <FaXTwitter className="text-[28px] group-hover:text-[32px] text-gray-700  dark:text-gray-200 dark:group-hover:text-gray-900 group-hover:text-gray-900 transition-all duration-300 ease-in-out" />
             </a >
 
         </motion.div>
@@ -68,9 +69,8 @@ export default function Header({}: Props) {
         </SideBarModal>
 
         <div className="hidden lg:flex items-center space-x-3">
-
-            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'#hero'}>Home</Link> 
             <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'#projects'}>Projects</Link>
+            <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'#experience'}>Experience</Link>
             <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'#skills'}>Tech stack</Link>
             <Link className="rounded-md tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" href={'#contact'}>ContactMe</Link>
 

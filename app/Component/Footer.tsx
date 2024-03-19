@@ -1,10 +1,13 @@
+import Link from "next/link";
 import { LuCopyright } from "react-icons/lu";
 
 type Props = {}
 
 export default function Footer({}: Props) {
   return (
-    <div className="h-[100px] bg-[#242424] dark:bg-slate-50 text-slate-50 dark:text-[#242424] flex items-center justify-between px-3 sm:px-5 lg:px-7 xl:px-10">
+  <div className="snap-center py-10 bg-[#242424] flex flex-col items-center justify-center space-y-4 dark:bg-slate-50 text-slate-50 dark:text-[#242424] px-3 sm:px-5 lg:px-7 xl:px-10 ">
+
+    <div className="w-full flex items-center justify-between ">
 
       <div className="flex items-start space-x-2">
          <LuCopyright className="text-sm" />
@@ -23,5 +26,8 @@ export default function Footer({}: Props) {
   
       </div>
     </div>
+
+    <Link className="bg-transparent px-20 py-2 border border-gray-100 dark:border-[#242424]" href={'#top'}>Back to Top</Link>
+  </div>
   )
 }
