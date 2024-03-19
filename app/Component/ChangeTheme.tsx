@@ -46,19 +46,19 @@ export default function ChangeTheme({}: Props) {
         <>
           {mounted &&
             (currentTheme === "light" ? (
-             <div className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-gray-700 hover:bg-gray-900 transition-all duration-300 ease-in-out">
+             <div  onClick={() => setTheme("dark")} className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-gray-700 hover:bg-gray-900 transition-all duration-300 ease-in-out">
               
              <FaMoon
                 className="text-[28px] group-hover:text-[32px] transition-all duration-300 ease-in-out text-gray-200"
-                onClick={() => setTheme("dark")}
+               
                 />
             </div> 
             ) : (
-              <div className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-gray-600 hover:bg-gray-700 transition-all duration-300 ease-in-out">
+              <div  onClick={() => setTheme("light")} className="w-[50px] group h-[50px] cursor-pointer flex items-center justify-center rounded-full bg-gray-600 hover:bg-gray-700 transition-all duration-300 ease-in-out">
 
               <FaSun
                 className="text-[28px] group-hover:text-[32px] transition-all duration-300 ease-in-out text-yellow-500"
-                onClick={() => setTheme("light")}
+               
                 />
               </div>
             ))}

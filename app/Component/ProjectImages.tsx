@@ -13,15 +13,11 @@ type Props = {
 
 export default function ProjectImages({slideShowImages}: Props) {
   return (
-    <div className="w-full">
+    <div className="w-full sm:w-[75%] mx-auto lg:w-[65%]">
     <Swiper
       modules={[Navigation, Pagination]}
       spaceBetween={50}
       slidesPerView={1}
-    //   autoplay={{
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    //   }}
       loop={true}
       pagination={{
         clickable: true,

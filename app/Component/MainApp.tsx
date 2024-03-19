@@ -21,7 +21,7 @@ export default function MainApp() {
     if(!mounted)return <Loader />
   return (
     
-     <div className="overflow-y-scroll overflow-x-hidden snap-y snap-mandatory h-screen">
+     <div className="overflow-y-scroll overflow-x-hidden snap-y snap-mandatory h-screen scroll-smooth">
         <Header />
         <section className="snap-start" id="hero">
          <Hero />
@@ -40,10 +40,6 @@ export default function MainApp() {
        </section>
 
        <Footer />
-
-    <p>
-      page
-    </p>
      </div>
   )
 }

@@ -23,10 +23,10 @@ export default function ContactMe({}: Props) {
 
   return(
      
-       <div className='flex flex-col px-3 my-5 py-10 space-y-3 items-center justify-center border-2 lg:flex-row lg:items-start lg:space-y-0 lg:space-x-5'>
+       <div className='flex flex-col px-3 my-5 py-10 space-y-3 items-center justify-center lg:flex-row lg:items-start lg:space-y-0 lg:space-x-5'>
       
       <div className='flex flex-col space-y-2 w-full sm:w-[550px] mx-auto items-start lg:pl-20 xl:pl-28 justify-start'>
-      <h3 className="capitalize text-gray-500 text-xl">{"lets's"} build you your dream</h3>
+      <h3 className="capitalize text-xl">{"lets's"} build you your dream</h3>
 
 <h4 className='text-sm capitalize sm:text-sm'>
   contact me
@@ -34,19 +34,19 @@ export default function ContactMe({}: Props) {
 
 <div className='flex items-center justify-start space-x-3'>
 
- <PhoneIcon className='text-[#f7ab0a] h-7 animate-pulse' />
+ <PhoneIcon className='text-[#242424] dark:text-gray-100 h-7 animate-pulse' />
  <p className='text-sm'>+234 703 071 6246</p>
 </div>
 
 <div className='flex items-center justify-start space-x-3'>
 
-<MapPinIcon className='text-[#f7ab0a] h-7 animate-pulse' />
+<MapPinIcon className='text-[#242424] dark:text-gray-100 h-7 animate-pulse' />
 <p className='text-sm'>UI, Ibadan</p>
 </div>
 
 <div className='flex items-center justify-start space-x-3'>
 
-<EnvelopeIcon className='text-[#f7ab0a] h-7 animate-pulse' />
+<EnvelopeIcon className='text-[#242424] dark:text-gray-100 h-7 animate-pulse' />
 <p className='text-sm'>whoroochuko@gmail.com</p>
 </div>
 
@@ -62,7 +62,7 @@ export default function ContactMe({}: Props) {
 
         <textarea {...register('message')} placeholder='Message' className='contactInput'/>
 
-        <button type='submit' className='bg-[#f7ab0a] py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
+        <button type='submit' className='bg-[#242424] dark:bg-gray-100 py-5 px-10 rounded-md text-gray-50 dark:text-[#242424] font-bold text-lg'>Submit</button>
 
 
        </form>
