@@ -1,7 +1,6 @@
 'use client'
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackGroundCircles from './BackGroundCircles';
-import { useEffect, useState } from 'react';
 type Props = {}
 
 export default function Hero({}: Props) {
@@ -24,6 +23,8 @@ export default function Hero({}: Props) {
         <Cursor cursorColor='#f7ab0a' />
         </h1>
          </div>
+
+         
 
     </div>
   )

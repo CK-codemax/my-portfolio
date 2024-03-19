@@ -45,7 +45,7 @@ function ResumeModal({children} : ResumeModalProps){
   const { openModal, isOpen } = useContext(ResumeModalContext);
 
   return (
-   <p onClick={openModal} className="rounded-md bottom-8 left-1 sm:left-12 absolute cursor-pointer tracking-wide sm:tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" >View my resume</p>
+   <p onClick={openModal} className="rounded-md cursor-pointer tracking-wide sm:tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" >View my resume</p>
   )
 }
 
