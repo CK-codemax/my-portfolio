@@ -27,7 +27,7 @@ export default function Footer({}: Props) {
       </div>
     </div>
 
-    <Link className="bg-transparent px-20 py-2 border border-gray-100 dark:border-[#242424]" href={'#top'}>Back to Top</Link>
+    <Link className="bg-transparent px-20 py-2 border border-gray-100 dark:border-[#242424]" href={'#home'}>Back to Top</Link>
   </div>
   )
 }

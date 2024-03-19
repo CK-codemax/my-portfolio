@@ -11,6 +11,7 @@ const jumiaImages = [
   "/jumia/Jumia clone - Google Chrome 3_15_2024 3_55_37 PM.png",
   "/jumia/Jumia clone - Google Chrome 3_15_2024 3_56_03 PM.png",
   "/jumia/Jumia clone - Google Chrome 3_15_2024 3_56_05 PM.png",
+  "/jumia/Hulu website - Google Chrome 3_15_2024 6_18_18 PM.png",
 ]
 
 const facebookImages = [

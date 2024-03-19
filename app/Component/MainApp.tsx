@@ -24,7 +24,7 @@ export default function MainApp() {
     
      <div className="overflow-y-scroll overflow-x-hidden snap-y snap-mandatory h-screen scroll-smooth">
         <Header />
-        <section className="snap-start" id="top">
+        <section className="snap-start" id="home">
          <Hero />
        </section>
 

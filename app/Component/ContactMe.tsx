@@ -16,9 +16,11 @@ export default function ContactMe({}: Props) {
   const {
     register,
     handleSubmit,
+    reset,
   } = useForm<Inputs>()
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
-    window.location.href = `mailto:whoroochuko@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} From ${formData.email}`
+    window.location.href = `mailto:whoroochuko@gmail?subject=${formData.subject}&body=Hi, my name is ${formData.name}. ${formData.message} From ${formData.email}`;
+    reset();
   }
 
   return(
@@ -35,7 +37,9 @@ export default function ContactMe({}: Props) {
 <div className='flex items-center justify-start space-x-3'>
 
  <PhoneIcon className='text-[#242424] dark:text-gray-100 h-7 animate-pulse' />
- <p className='text-sm'>+234 703 071 6246</p>
+ {/* <p className='text-sm'>+234 703 071 6246</p> */}
+ <a className='text-sm' href="tel:+2347030716246">+234 703 071 6246</a>
+
 </div>
 
 <div className='flex items-center justify-start space-x-3'>
@@ -47,7 +51,8 @@ export default function ContactMe({}: Props) {
 <div className='flex items-center justify-start space-x-3'>
 
 <EnvelopeIcon className='text-[#242424] dark:text-gray-100 h-7 animate-pulse' />
-<p className='text-sm'>whoroochuko@gmail.com</p>
+<a className='text-sm' href="mailto:whoroochuko@gmail.com">whoroochuko@gmail.com</a>
+
 </div>
 
       </div>
