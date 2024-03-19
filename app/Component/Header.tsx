@@ -9,7 +9,7 @@ type Props = {}
 
 export default function Header({}: Props) {
   return (
-    <header className="bg-gray-200/90 z-50 top-0 snap-center dark:bg-[#242424]/90 h-[70px] w-full shadow-md sticky justify-between px-3 lg:px-7 flex items-center">
+    <header className="bg-gray-200/90 z-50 top-0 dark:bg-[#242424]/90 h-[70px] w-full shadow-md sticky justify-between px-3 lg:px-7 flex items-center">
    
         <motion.div
         initial={{

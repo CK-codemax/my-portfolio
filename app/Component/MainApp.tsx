@@ -22,25 +22,25 @@ export default function MainApp() {
     if(!mounted)return <Loader />
   return (
     
-     <div className="overflow-y-scroll overflow-x-hidden snap-y snap-mandatory h-screen scroll-smooth">
+     <div className="overflow-y-scroll overflow-x-hidden h-screen scroll-smooth">
         <Header />
-        <section className="snap-start" id="home">
+        <section id="home">
          <Hero />
        </section>
 
-       <section className="snap-start" id="projects">
+       <section id="projects">
          <Projects />
        </section>
 
-       <section className="snap-start" id="experience">
+       <section id="experience">
          <Experience />
        </section>
 
-       <section className="snap-center" id="skills">
+       <section  id="skills">
          <Skills  />
        </section>
 
-       <section className="snap-center" id="contact">
+       <section  id="contact">
          <ContactMe  />
        </section>
 

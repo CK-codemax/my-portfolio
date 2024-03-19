@@ -5,7 +5,7 @@ type Props = {}
 
 export default function Footer({}: Props) {
   return (
-  <div className="snap-center py-10 bg-[#242424] flex flex-col items-center justify-center space-y-4 dark:bg-slate-50 text-slate-50 dark:text-[#242424] px-3 sm:px-5 lg:px-7 xl:px-10 ">
+  <div className="py-10 bg-[#242424] flex flex-col items-center justify-center space-y-4 dark:bg-slate-50 text-slate-50 dark:text-[#242424] px-3 sm:px-5 lg:px-7 xl:px-10 ">
 
     <div className="w-full flex items-center justify-between ">
 
