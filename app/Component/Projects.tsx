@@ -48,7 +48,7 @@ export default function Projects({}: Props) {
   return (
     <div className="w-full min-h-screen pt-20">
         <p className="uppercase text-xs w-full tracking-[7px] text-center">my projects</p>
-        <p className="capitalize text-xs w-full mt-3 text-center">slide through the {"project's images"} to see more images of the project</p>
+        <p className="capitalize text-xs w-full mt-3 px-3 text-center">slide through the {"project's images"} to see more images of the project</p>
         <div className="grid grid-cols-1 mt-10 sm:grid-cols-2 gap-10 px-4 sm:px-6 lg:px-8 xl:px-10">
 
         <Project name="jumia clone" github="https://github.com/CK-codemax/jumia-clone" live="https://jumia-clone-sl3f.vercel.app" images={jumiaImages} des="This application is a clone of the popular online retail application, Jumia in Nigeria and other african countries. Users can add products to their cart, choose a preferred currency, checkout their cart using stripe payment. Users can also get a catalog of all their orders. "/>
