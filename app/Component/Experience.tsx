@@ -1,5 +1,6 @@
 import ProjectImages from "./ProjectImages"
 import ResumeModal from "./ResumeModal"
+import { IoMdDownload } from "react-icons/io";
 
 const unipaysImages = [
   '/unipays/UNIPAYS - Google Chrome 3_19_2024 3_19_35 AM.png',
@@ -26,7 +27,10 @@ export default function Experience({}: Props) {
         <ResumeModal.Open />
         <ResumeModal.Window />
      </ResumeModal>
-    <a download={'Ochuko Whoro Resume.pdf'} href="/Ochuko whoro (1).pdf" className="rounded-md tracking-wide sm:tracking-widest cursor-pointer text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out">download my resume</a>
+    <a download={'Ochuko Whoro Resume.pdf'} href="/Ochuko whoro (1).pdf" className="rounded-md tracking-wide sm:tracking-widest flex items-center space-x-1 cursor-pointer text-xs uppercase border dark:border-gray-200 border-[#242424] px-2 sm:px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out">
+     <IoMdDownload className="text-sm" />
+      <span>resume</span>
+      </a>
     </div>
     <p className="capitalize text-xs w-full my-3 text-center">Here is a brief summary of my experience as a fullstack developer</p>
     

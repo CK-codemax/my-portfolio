@@ -4,6 +4,7 @@ import Image from "next/image";
 import { HiMiniXMark } from "react-icons/hi2";
 import { createContext, useContext, useEffect, useRef, useState } from "react";
 import { createPortal } from "react-dom";
+import { FaRegEye } from "react-icons/fa";
 
 // Define the shape of the context value
 interface ResumeModalContextValue {
@@ -45,7 +46,10 @@ function ResumeModal({children} : ResumeModalProps){
   const { openModal, isOpen } = useContext(ResumeModalContext);
 
   return (
-   <p onClick={openModal} className="rounded-md cursor-pointer tracking-wide sm:tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" >View my resume</p>
+   <div onClick={openModal} className="rounded-md cursor-pointer flex items-center space-x-1 tracking-wide sm:tracking-widest text-xs uppercase border dark:border-gray-200 border-[#242424] px-2 sm:px-5 py-2 hover:bg-gray-500 dark:hover:bg-gray-200  dark:text-gray-100 dark:hover:text-gray-900 text-gray-700 hover:text-gray-900 transition-all duration-300 ease-in-out" >
+    <FaRegEye className="text-sm" />
+    <span>resume</span>
+    </div>
   )
 }
 

@@ -22,7 +22,7 @@ export default function MainApp() {
     if(!mounted)return <Loader />
   return (
     
-     <div className="overflow-y-scroll overflow-x-hidden min-h-screen scroll-smooth">
+     <>
         <Header />
         <section id="home">
          <Hero />
@@ -43,9 +43,7 @@ export default function MainApp() {
        <section  id="contact">
          <ContactMe  />
        </section>
-       <section>
           <Footer />
-       </section>
-     </div>
+     </>
   )
 }

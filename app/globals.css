@@ -3,9 +3,12 @@
 @tailwind utilities;
 
 @layer components{
-  
+  html{
+    scroll-behavior: smooth;
+  }
+
   body{
-    @apply snap-y snap-mandatory overflow-y-scroll z-0 transition-all ease-in-out duration-700
+    @apply overflow-y-scroll overflow-x-hidden z-0 transition-all ease-in-out duration-700;
   }
 
   .contactInput{
